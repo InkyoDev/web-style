@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <!-- <link rel="stylesheet" href="/style/tablas.css"> -->
+</head>
+
+<!-- ! LECCIÓN 4 -->
+
+<body>
+
+    <!-- TABLA NORMAL -->
+    <table border="1" style="width: 100%;"> <!-- tabla con borde y ancho del 100% -->
+
+        <!-- Agrupar columnas para darle estilos -->
+        <colgroup>
+            <col span="2" style="background-color: blueviolet;">
+            <col span="1" style="background-color: red;">
+        </colgroup>
+
+        <!-- * Define una fila - "tr" Significa table row -->
+        <tr>
+            <!-- * Define celdas de encabezado - "th"  Significa table header -->
+            <th style="width: 45%;">Nombre</th>
+            <th style="width: 45%;">Apellido</th>
+            <th style="width: 10%;">Nota</th>
+        </tr>
+        <tr>
+            <!-- * Celdas normales para mostrar datos "td" -->
+            <td>Arturo</td>
+            <td>Duque</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Olismary</td>
+            <td>Pastrano</td>
+            <td>19</td>
+        </tr>
+        <tr>
+            <td>Julian</td>
+            <td>Alvarez</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>Angely</td>
+            <td>Oliveros</td>
+            <td>19</td>
+        </tr>
+
+        <!-- * Mostrar un título para la tabla -->
+        <caption>Notas del alumno</caption>
+    </table>
+
+    <br>
+
+    <table border="1" style="width: 100%;">
+        <tr>
+            <!-- * El encabezado ocupa dos columnas "colspan=2" -->
+            <th style="width: 45%;"" colspan=" 2">Nombre</th>
+            <th style="width: 10%;">Nota</th>
+        </tr>
+        <tr>
+            <td>Arturo</td>
+            <td>Duque</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Olismary</td>
+            <td>Pastrano</td>
+            <td>19</td>
+        </tr>
+        <tr>
+            <td>Julian</td>
+            <td>Alvarez</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>Angely</td>
+            <td>Oliveros</td>
+            <td>19</td>
+        </tr>
+        <caption>Notas del alumno</caption>
+    </table>
+
+    <br>
+    <!-- * TABLA BÁSICA SIN ESTILOS -->
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Notas</th>
+        </tr>
+        <tr>
+            <td>Arturo</td>
+            <td>Duque</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Carolina</td>
+            <td>Lugo</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>Olismary</td>
+            <td>Pastrano</td>
+            <td>20</td>
+        </tr>
+    </table>
+
+    <br>
+
+
+    <!-- Emmet  -->
+
+</body>
+
+</html>
