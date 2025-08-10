@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buenas prácticas de comentarios</title>
+</head>
+
+<body>
+    <pre>
+        Usa mayúsculas para títulos de sección <!-- FORMULARIO: TIPOS DE INPUT -->
+        Sé claro y conciso <!-- Input de correo electrónico -->
+        Cerrar comentarios correctamente <!-- comentario -->
+        Comenta por bloques, o grupo lógico no por cada línea.
+        Usa comentarios para explicar "por qué", no "qué".
+        Si el código es claro, no necesitas decir "esto es un input", pero sí por qué se usa step="any"
+    </pre>
+
+    <h2>
+        Ejemplos
+    </h2>
+    <!-- ==================== FORMULARIO: TIPOS DE INPUT ==================== -->
+    <form action="">
+        <fieldset>
+            <legend>Formulariuo 1</legend>
+            <!-- Texto: Nombre y Apellido -->
+            <label for="name">Nombre</label><br>
+            <input type="text" id="name" name="name"><br>
+
+            <!-- Contraseña: Campo seguro -->
+            <label for="password">Contraseña</label><br>
+            <input type="password" id="password" name="password"><br>
+
+            <!-- Fecha de nacimiento: Entrada tipo date -->
+            <label for="nacimiento">Fecha de nacimiento</label><br>
+            <input type="date" id="nacimiento" name="nacimiento"><br>
+        </fieldset>
+    </form>
+
+    <!-- ==================== CLASE 2: TIPOS DE INPUTS ==================== -->
+    <form action="">
+        <fieldset>
+            <legend>Formulario 2</legend>
+            <!-- Campo de texto: Nombre y Apellido -->
+            <label for="name">Nombre</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="lastname">Apellido</label><br>
+            <input type="text" id="lastname" name="lastname"><br>
+
+            <!-- Contraseña: Entrada oculta -->
+            <label for="password">Contraseña</label><br>
+            <input type="password" id="password" name="password"><br>
+
+            <!-- Email: Validación automática -->
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email"><br>
+
+            <!-- Hidden: Campo no visible -->
+            <input type="hidden" id="invisible" name="invisible" value="valor">
+
+            <!-- Radio buttons: Elección única -->
+            <label>Opciones favoritas</label><br>
+            <input type="radio" id="html-radio" name="favorito" value="html">
+            <label for="html-radio">HTML</label><br>
+            <input type="radio" id="css-radio" name="favorito" value="css">
+            <label for="css-radio">CSS</label><br>
+
+            <!-- Checkboxes: Elección múltiple -->
+            <label>Otros lenguajes</label><br>
+            <input type="checkbox" id="html-check" name="otros" value="html">
+            <label for="html-check">HTML</label><br>
+            <input type="checkbox" id="css-check" name="otros" value="css">
+            <label for="css-check">CSS</label><br>
+
+            <!-- Color, fecha, hora, número, rango, archivo -->
+            <label for="color">Color favorito</label>
+            <input type="color" id="color" name="color"><br>
+
+            <label for="nacimiento">Fecha de nacimiento</label>
+            <input type="date" id="nacimiento" name="nacimiento"><br>
+
+            <label for="nacimiento2">Fecha y hora de nacimiento</label>
+            <input type="datetime-local" id="nacimiento2" name="nacimiento2"><br>
+
+            <label for="hora">Hora preferida</label>
+            <input type="time" id="hora" name="hora"><br>
+
+            <label for="edad">Edad</label>
+            <input type="number" id="edad" name="edad" step="1" min="0"><br>
+
+            <label for="rango">Nivel de experiencia</label>
+            <input type="range" id="rango" name="rango" min="0" max="100"><br>
+
+            <label for="archivo">Subir archivo</label>
+            <input type="file" id="archivo" name="archivo" multiple><br>
+
+            <!-- Botones: Acciones del formulario -->
+            <input type="button" value="Alerta" onclick="alert('Hola')">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Reiniciar">
+        </fieldset>
+
+    </form>
+
+    <h2>Estandares de documentación para otros lenguajes</h2>
+    <pre>
+        JavaScript -> JSDoc
+        PHP -> PHPDoc
+        Python -> Docstrings
+        Java/C# -> JavaDoc / XML Comments
+        CSS -> Comentarios simples /* */, a veces con SMACSS/BEM
+    </pre>
+</body>
+
+</html>
